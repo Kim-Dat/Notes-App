@@ -1,0 +1,72 @@
+:root {
+    --color-3D3649: #1f1d22;
+    --color-8685EF: #65fbd2;
+    --color-ff00fb: #ff00fb;
+}
+.text-gradient {
+    background: -webkit-linear-gradient(#ff00fb, #127aeb);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+body {
+    background-color: var(--color-3D3649);
+    font-family: "Pacifico", cursive;
+    color: var(--color-8685EF);
+}
+.container-fluid-custom {
+    max-width: 1244px;
+}
+.btn-outline-primary {
+    --bs-btn-color: var(--color-8685EF);
+    --bs-btn-border-color: var(--color-8685EF);
+    --bs-btn-hover-color: var(--color-ff00fb);
+    --bs-btn-hover-bg: var(--color-8685EF);
+    --bs-btn-hover-border-color: var(--color-8685EF);
+    --bs-btn-focus-shadow-rgb: 13, 110, 253;
+    --bs-btn-active-color: var(--color-ff00fb);
+    --bs-btn-active-bg: var(--color-8685EF);
+    --bs-btn-active-border-color: var(--color-8685EF);
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: var(--color-8685EF);
+    --bs-btn-disabled-bg: transparent;
+    --bs-btn-disabled-border-color: var(--color-8685EF);
+    --bs-gradient: none;
+}
+.btn-primary {
+    --bs-btn-color: var(--color-ff00fb);
+    --bs-btn-bg: var(--color-8685EF);
+    --bs-btn-border-color: var(--color-8685EF);
+    --bs-btn-hover-color: var(--color-ff00fb);
+    --bs-btn-hover-bg: var(--color-8685EF);
+    --bs-btn-hover-border-color: var(--color-8685EF);
+    --bs-btn-focus-shadow-rgb: 49, 132, 253;
+    --bs-btn-active-color: var(--color-ff00fb);
+    --bs-btn-active-bg: var(--color-8685EF);
+    --bs-btn-active-border-color: var(--color-8685EF);
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: var(--color-ff00fb);
+    --bs-btn-disabled-bg: var(--color-8685EF);
+    --bs-btn-disabled-border-color: var(--color-8685EF);
+}
+/* Home */
+/* @media (min-width: 1200px) {
+    .home {
+        background: url("../img/human-1.svg") left bottom no-repeat,
+        url("../img/human-2.svg") right bottom no-repeat,
+        url("../img/noise-bg.svg") left top repeat, var(--color-3D3649);
+    }
+} */
+
+.home-title::before {
+    content: url("../img/stars.svg");
+    position: absolute;
+    left: -50px;
+    top: -30px;
+}
+
+.home-title::after {
+    content: url("../img/stars.svg");
+    position: absolute;
+    right: -50px;
+    bottom: -30px;
+}
